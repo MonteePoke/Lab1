@@ -410,7 +410,7 @@ public class MyGUI {
     }
 
     public void init() {
-        JFrame frame = new JFrame("Calculatron Git");
+        JFrame frame = new JFrame("Calculatron");
         frame.setContentPane(new MyGUI().MyPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
