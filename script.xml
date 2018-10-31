@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="Lab4" default="jar">
+    <description>
+        This is a script to build the project
+    </description>
+
+    <target name="jar" depends="compile, init">
+        <jar destfile="Calculatron.jar" basedir="classes">
+            <manifest>
+                <attribute name="Main-Class" value="Main"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name="compile" depends="init">
+        <javac srcdir="src" destdir="classes" debug="true" includeantruntime="false"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="classes"/>
+    </target>
+</project>
